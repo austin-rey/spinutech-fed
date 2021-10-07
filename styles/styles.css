@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700');
+
+body {
+  background-color: #333;
+  font-family: 'Open Sans';
+  color: #fff;
+}
+
+#main-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#circle-container,
+#square-container {
+  display: list-item;
+  list-style-type: none;
+}
+
+#circle-container li p,
+#square-container li p {
+  visibility: hidden;
+  position: absolute;
+  top: -45px;
+}
+
+#circle-container:hover > li,
+#square-container:hover > li {
+  opacity: 50%;
+}
+
+#circle-container li:hover,
+#square-container li:hover {
+  opacity: 100%;
+}
+
+#circle-container li:hover .circle-color,
+#square-container li:hover .circle-color {
+  visibility: visible;
+}
+
+#circle-container li,
+#square-container li {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+  float: left;
+  position: relative;
+}
+
+#circle-container li {
+  border-radius: 100%;
+}
+
+.bg-red {
+  background-color: red;
+}
+.bg-blue {
+  background-color: blue;
+}
+.bg-orange {
+  background-color: orange;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+}
